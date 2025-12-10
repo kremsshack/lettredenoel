@@ -44,7 +44,7 @@ body {
 /* Titre */
 .entete {
   text-align: center;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: normal;
   line-height: 38px;
   margin-bottom: 25px;
@@ -68,8 +68,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  gap: 55px;
   margin-bottom: 8px;
+  font-size: 40px;
 }
 
 .groupe-info {
@@ -238,7 +239,7 @@ body {
 .texte-laisser {
   margin: 0;
 }
-.img.boule {
+img.icone-boule {
   width: 30px;
   height: 30px;
   margin-left: 8px;
@@ -286,7 +287,7 @@ body {
   object-fit: cover;
   z-index: 3; /* au-dessus de la feuille */
   pointer-events: none;
-  top: 63%; /* position verticale*/
+  top: 65%; /* position verticale*/
 }
 
 /* Responsive mobile */
