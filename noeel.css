@@ -1,0 +1,357 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fond global */
+body {
+  background-image: url("/asset/fond.png");
+  font-family: "Mountains of Christmas", cursive, sans-serif;
+  padding: 30px;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cadre bleu étoilé */
+.page-fond {
+  background: #18425b;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Feuille beige */
+.feuille-principale {
+  background: #ffffff;
+  width: 100%;
+  max-width: 850px;
+  padding: 35px 40px 75px 40px;
+  min-height: 950px;
+  position: relative;
+}
+
+/* Titre */
+.entete {
+  text-align: center;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 38px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.deco-houx {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Infos perso */
+.infos-enfant {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.ligne-infos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.groupe-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.champ {
+  background: #f5deb3;
+  height: 28px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.champ-nom {
+  width: 180px;
+}
+
+.champ-age {
+  width: 60px;
+}
+
+.champ-ville {
+  width: 200px;
+}
+
+.champ-comportement {
+  width: 130px;
+}
+
+/* Frise d'icônes */
+.ligne-icones {
+  text-align: center;
+  font-size: 22px;
+  margin: 18px 0 20px 0;
+  letter-spacing: 30px;
+}
+
+/* Phrase intro */
+.texte-intro {
+  font-size: 25px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Grille principale : 1 grande colonne gauche, 4 blocs à droite */
+.grille-principale {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr;
+  grid-template-rows: 250px 180px 130px 110px;
+  grid-column-gap: 18px;
+  grid-row-gap: 14px;
+  margin-bottom: 70px;
+}
+
+/* Grande liste à gauche (prend toute la hauteur) */
+.case-liste {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+
+/* Blocs de droite */
+.case-cadeau {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.case-gater {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.case-laisser {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.case-signe {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+/* Titres des blocs */
+.case h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+/* Bloc liste gauche */
+.bloc-liste {
+  background: #f5deb3;
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 92%;
+}
+
+/* Lignes intérieures de la grande liste */
+.bloc-liste .ligne-ecriture {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+/* Blocs rectangles de droite (cadeau + gâter) */
+.bloc-rect {
+  background: #f5deb3;
+  border-radius: 10px;
+  padding: 10px 20px 16px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* lignes dans les blocs de droite */
+.bloc-rect .ligne-ecriture {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  height: 22px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* Bloc "Je laisserai" */
+.case-laisser {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.ligne-laisser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.bloc-laisser {
+  background: #f5deb3;
+  border-radius: 10px;
+  height: 28px;
+  width: 170px;
+}
+
+/* Texte */
+.case-laisser p:last-child {
+  margin-top: 0;
+}
+
+/* Signature en bas à droite */
+.case-signe {
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+/* ligne texte */
+.ligne-signe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.ligne-signature {
+  background: #f5deb3;
+  border-radius: 10px;
+  height: 28px;
+  width: 170px;
+}
+
+/* Décor bas */
+.decor-bas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 30px 20px 30px;
+  pointer-events: none;
+}
+
+.img-pere-noel {
+  width: 120px;
+  height: auto;
+  transform: rotate(-11deg);
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+.img-sapin {
+  width: 100px;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.rang-cadeaux {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.img-cadeau {
+  width: 70px;
+  height: auto;
+}
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+    min-height: 600px;
+  }
+
+  .page-fond {
+    padding: 10px;
+  }
+
+  .feuille-principale {
+    max-width: 100%;
+    padding: 20px 15px 80px 15px;
+    min-height: 700px;
+  }
+
+  .entete {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .infos-enfant {
+    font-size: 16px;
+  }
+
+  .texte-intro {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .grille-principale {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 18px;
+  }
+
+  .case-liste,
+  .case-cadeau,
+  .case-gater,
+  .case-laisser,
+  .case-signe {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  .bloc-liste,
+  .bloc-rect,
+  .bloc-laisser {
+    height: auto;
+  }
+
+  .texte-laisser,
+  .texte-signe {
+    font-size: 16px;
+  }
+
+  .ligne-signature {
+    width: 140px;
+    height: 26px;
+  }
+
+  .decor-bas {
+    height: 100px;
+    padding: 0 15px 10px 15px;
+  }
+
+  .img-pere-noel {
+    width: 95px;
+  }
+
+  .img-sapin {
+    width: 75px;
+  }
+
+  .img-cadeau {
+    width: 55px;
+  }
+}
