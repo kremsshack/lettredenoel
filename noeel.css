@@ -7,7 +7,7 @@
 
 /* Fond global */
 body {
-  background-image: url("/asset/fond.png");
+  background-image: url("asset/fond.png");
   font-family: "Mountains of Christmas", cursive, sans-serif;
   padding: 30px;
   min-height: 700px;
