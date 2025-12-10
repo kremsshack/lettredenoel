@@ -16,14 +16,14 @@ body {
   align-items: center;
 }
 
-/* Cadre bleu étoilé */
+/* Cadre bleu*/
 .page-fond {
   background: #18425b;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* Feuille beige */
+/* Feuille blanche */
 .feuille-principale {
   background: #ffffff;
   width: 100%;
@@ -120,7 +120,7 @@ body {
   margin-bottom: 70px;
 }
 
-/* Grande liste à gauche (prend toute la hauteur) */
+/* Grande liste à gauche */
 .case-liste {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
@@ -170,7 +170,7 @@ body {
   margin-bottom: 4px;
 }
 
-/* Blocs rectangles de droite (cadeau + gâter) */
+/* Blocs rectangles de droite */
 .bloc-rect {
   background: #f5deb3;
   border-radius: 10px;
@@ -209,11 +209,6 @@ body {
   border-radius: 10px;
   height: 28px;
   width: 170px;
-}
-
-/* Texte */
-.case-laisser p:last-child {
-  margin-top: 0;
 }
 
 /* Signature en bas à droite */
